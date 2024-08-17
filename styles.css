@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins',sans-serif;
+    background: hsl(0, 88%, 94%);
+    width: 100vw; /* Ensure body takes up the full viewport width */
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    width: 100vw; /* Ensure container takes up full width of viewport */
+    height: 100vh; /* Ensure container takes up full height of viewport */
+    padding: 1rem; /* Adds padding around the content */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+.heading {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.main {
+    background: hsl(0, 100%, 86%);
+    padding: 5px 20px;
+    margin: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns the label and input vertically */
+    justify-content: center; /* Centers the entire inputs section horizontally */
+    margin-top: 1rem; /* Optional: Adds some margin on top */
+    gap: 10px;
+}
+
+
+.inputs label {
+    margin-right: 10px; /* Adds some space between the label and input */
+    font-size: 1rem; /* Adjusts the font size if needed */
+    text-align: center;
+}
+
+.inputs input {
+    text-align: center;
+    padding: 5px;
+    outline: none;
+    width: 50%;
+    border: none;
+    font-size: 1rem; /* Adjusts the font size if needed */
+}
+
+.inputs button {
+    font-size: 1rem;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10%;
+    background: hsl(196, 100%, 78%);
+}
+
+.inputs button:hover {
+    background: hsl(196, 100%, 88%);
+}
+
+.inputs button:active {
+    background: hsl(196, 100%, 98%);
+}
+
+.playfield {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the label and button horizontally */
+    justify-content: center; /* Centers the content vertically within the container */
+    text-align: center; /* Ensures text inside the playfield is centered */
+    margin-top: 0.5rem; /* Adds some margin on top */
+    width: 100%; /* Ensures .playfield takes up full width of its parent */
+    max-width: 100vw; /* Prevents overflow */
+}
+
+.playfield p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.playfield button {
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #ffffff;
+    font-size: 1rem;
+}
+
+.playfield button:active {
+    background: hsl(0, 0%, 97%);
+    cursor: pointer;
+}
+
+.playfield button:disabled {
+    background: hsl(196, 100%, 88%);
+    cursor: not-allowed;
+}
